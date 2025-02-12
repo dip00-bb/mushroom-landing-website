@@ -2860,4 +2860,10 @@
   inherits: false;
 }
 @property --tw-contain-paint {
-  
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
