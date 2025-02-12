@@ -1,0 +1,28 @@
+{
+  "name": "mushroom",
+  "version": "1.0.0",
+  "description": "mushroom shop landing website",
+  "keywords": [
+    "mushroom",
+    "website"
+  ],
+  "homepage": "https://github.com/dip00-bb/mushroom-landing-website#readme",
+  "bugs": {
+    "url": "https://github.com/dip00-bb/mushroom-landing-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dip00-bb/mushroom-landing-website.git"
+  },
+  "license": "ISC",
+  "author": "dip chondo partho",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6",
+    "tailwindcss": "^4.0.6"
+  }
+}

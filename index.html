@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="bg-white shadow-md">
+        <div class="max-[100%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <span class="text-green-600 text-2xl font-bold">Mushify</span>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex ">
+                    <ul class="flex space-x-24">
+                        <li><a href="#" class="text-gray-700 hover:text-green-600 font-poppins font-medium">Home</a>
+                        </li>
+                        <li><a href="#" class="text-gray-700 hover:text-green-600 font-poppins font-medium">Shop</a>
+                        </li>
+                        <li><a href="#" class="text-gray-700 hover:text-green-600 font-poppins font-medium">About</a>
+                        </li>
+                        <li><a href="#" class="text-gray-700 hover:text-green-600 font-poppins font-medium">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Cart Icon -->
+                <div class="flex items-center space-x-4">
+                    <button class="relative">
+                        🛒
+                        <span
+                            class="absolute -top-2 -right-2 bg-green-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">0</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    ☰
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+            <a href="#" class="block text-gray-700 hover:text-green-600">Home</a>
+            <a href="#" class="block text-gray-700 hover:text-green-600">Shop</a>
+            <a href="#" class="block text-gray-700 hover:text-green-600">About</a>
+            <a href="#" class="block text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+    </nav>
+
+
+    <section
+        class="relative w-full h-[80vh] bg-cover bg-center flex items-center justify-center text-center px-6 md:px-12 mt-8"
+        style="background-image: url('./images/hero.jpg'); background-size: cover; ">
+        <div class="bg-black/50 absolute inset-0"></div> <!-- Dark overlay for better readability -->
+
+        <div class="relative z-10 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold font-[Poppins]">Fresh & Organic Mushrooms</h1>
+            <p class="mt-4 text-lg md:text-xl font-light">Grown with care, delivered to your doorstep.</p>
+            <a href="#"
+                class="mt-6 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full text-lg font-medium transition duration-300">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 md:px-12 bg-gray-100">
+        <h2 class="text-3xl md:text-4xl font-bold text-center font-[Poppins] text-gray-800">Our Oyster Mushroom
+            Categories</h2>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <!-- 1 KG Card -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                <img src="./images/mushroom-1kg.jpg" alt="1KG Oyster Mushroom"
+                    class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-2xl font-semibold mt-4">1 KG Oyster Mushroom</h3>
+                <p class="text-lg text-gray-600 mt-2">৳ 500</p>
+                <a href="#"
+                    class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-lg font-medium transition duration-300">
+                    Buy Now
+                </a>
+            </div>
+
+            <!-- 750g Card -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                <img src="./images/mushroom-750g.jpg" alt="750g Oyster Mushroom"
+                    class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-2xl font-semibold mt-4">750g Oyster Mushroom</h3>
+                <p class="text-lg text-gray-600 mt-2">৳ 400</p>
+                <a href="#"
+                    class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-lg font-medium transition duration-300">
+                    Buy Now
+                </a>
+            </div>
+
+            <!-- 250g Card -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                <img src="./images/mushroom-250g.jpg" alt="250g Oyster Mushroom"
+                    class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-2xl font-semibold mt-4">250g Oyster Mushroom</h3>
+                <p class="text-lg text-gray-600 mt-2">৳ 200</p>
+                <a href="#"
+                    class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-lg font-medium transition duration-300">
+                    Buy Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="py-12 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+
+            <!-- Left Side - Image -->
+            <div class="md:w-1/2">
+                <img src="./images/health-benifit.jpg" alt="Oyster Mushroom Health Benefits"
+                    class="w-full h-auto rounded-lg shadow-md">
+            </div>
+
+            <!-- Right Side - Health Benefits -->
+            <div class="md:w-1/2 mt-6 md:mt-0 md:pl-10">
+                <h2 class="text-3xl md:text-4xl font-bold font-[Poppins] text-gray-800">Health Benefits of Oyster
+                    Mushrooms</h2>
+                <ul class="mt-4 space-y-3 text-lg text-gray-600">
+                    <li>✅ Boosts immune system with antioxidants</li>
+                    <li>✅ Rich in vitamins B & D for better metabolism</li>
+                    <li>✅ Helps lower cholesterol levels naturally</li>
+                    <li>✅ Supports heart health with beta-glucans</li>
+                    <li>✅ Aids digestion & promotes gut health</li>
+                    <li>✅ Low in calories, great for weight management</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="py-12 px-6 md:px-12 bg-gray-100">
+        <div class="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl md:text-4xl font-bold font-[Poppins] text-gray-800 text-center">Get in Touch</h2>
+            <p class="text-lg text-gray-600 text-center mt-2">Submit your details and we will contact you soon.</p>
+
+            <form class="mt-6">
+                <!-- Name -->
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Full Name</label>
+                    <input type="text" placeholder="Enter your name"
+                        class="w-full mt-2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Email Address</label>
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full mt-2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Phone Number -->
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Phone Number</label>
+                    <input type="tel" placeholder="Enter your phone number"
+                        class="w-full mt-2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-lg font-medium transition duration-300">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Logo & About -->
+            <div>
+                <h2 class="text-2xl font-bold font-[Poppins]">Mushify</h2>
+                <p class="mt-2 text-gray-400">Fresh & organic oyster mushrooms delivered to your doorstep.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-col space-y-2">
+                <h3 class="text-lg font-semibold">Quick Links</h3>
+                <a href="#" class="text-gray-400 hover:text-green-400 transition">Home</a>
+                <a href="#" class="text-gray-400 hover:text-green-400 transition">Shop</a>
+                <a href="#" class="text-gray-400 hover:text-green-400 transition">About</a>
+                <a href="#" class="text-gray-400 hover:text-green-400 transition">Contact</a>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-lg font-semibold">Follow Us</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-gray-500 mt-6 text-sm">
+            © 2025 Mushify. All rights reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
